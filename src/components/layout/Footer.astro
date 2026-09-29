@@ -45,15 +45,13 @@ const totalPlaceCount = darjeelingCount + kalimpongCount;
       </h3>
       <ul class="space-y-2 text-xs">
         <li>
-          <a href="/places/darjeeling" class="hover:text-[#b45309] transition flex items-center justify-between group">
-            <span>Darjeeling Ridge</span>
-            <span class="font-mono text-[11px] text-[#7d8a83] group-hover:text-[#b45309]">{String(darjeelingCount).padStart(2, '0')} spots</span>
+          <a href="/places/darjeeling" class="hover:text-[#b45309] transition group">
+            <span>Darjeeling Ridge ({String(darjeelingCount).padStart(2, '0')} spots)</span>
           </a>
         </li>
         <li>
-          <a href="/places/kalimpong" class="hover:text-[#b45309] transition flex items-center justify-between group">
-            <span>Kalimpong Hills</span>
-            <span class="font-mono text-[11px] text-[#7d8a83] group-hover:text-[#b45309]">{String(kalimpongCount).padStart(2, '0')} spots</span>
+          <a href="/places/kalimpong" class="hover:text-[#b45309] transition group">
+            <span>Kalimpong Hills ({String(kalimpongCount).padStart(2, '0')} spots)</span>
           </a>
         </li>
       </ul>
@@ -61,23 +59,22 @@ const totalPlaceCount = darjeelingCount + kalimpongCount;
 
     <div>
       <h3 class="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#1c2421] mb-3">
-        Archive
+        Explore More
       </h3>
       <ul class="space-y-2 text-xs">
         <li>
-          <a href="/places" class="hover:text-[#b45309] transition">Complete {totalPlaceCount}-Place Index</a>
+          <a href="/places" class="hover:text-[#b45309] transition">Browse All Destinations</a>
         </li>
         <li>
           <a href="https://github.com/humayan-x/offbeat-bengal" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 hover:text-[#1c2421] transition">
-            <IconBrandGithub class="size-3.5 text-[#2d4739]" /> Open Source Register
+            <IconBrandGithub class="size-3.5 text-[#2d4739]" /> Behind the Guide
           </a>
         </li>
       </ul>
     </div>
   </div>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-[#e5e0d8] flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 text-center sm:text-left text-xs text-[#7d8a83] font-mono">
-    <span>© {new Date().getFullYear()} Offbeat Bengal. Curated local documentation.</span>
-    <span class="shrink-0">Static Edge Deployment · Zero tracking</span>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-[#e5e0d8] flex items-center justify-center text-center text-xs text-[#7d8a83] font-mono">
+    <span>© {new Date().getFullYear()} Offbeat Bengal</span>
   </div>
 </footer>
