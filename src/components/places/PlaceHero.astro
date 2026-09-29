@@ -1,0 +1,36 @@
+---
+import type { Place } from '../../types/place';
+import { IconMapPin, IconMountain } from '@tabler/icons-astro';
+
+interface Props {
+  place: Place;
+}
+
+const { place } = Astro.props;
+const formattedDistrict = place.district.charAt(0).toUpperCase() + place.district.slice(1);
+---
+
+<header class="space-y-3.5 border-b border-[#e5e0d8] pb-6">
+  <div class="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-xs">
+    <span class="inline-flex items-center gap-1 rounded bg-[#2d4739]/10 px-2 py-0.5 font-mono text-[10px] uppercase font-semibold text-[#2d4739] border border-[#2d4739]/20">
+      <IconMountain class="size-3.5" />
+      {place.category}
+    </span>
+    <span class="inline-flex items-center gap-1 font-mono text-[11px] text-[#7d8a83]">
+      <IconMapPin class="size-3 text-[#b45309]" />
+      {formattedDistrict} Sub-Division
+    </span>
+    <span class="text-[#d6d0c4]">·</span>
+    <span class="font-mono text-[11px] text-[#7d8a83]">
+      Geo: {place.geo.lat}° N, {place.geo.lng}° E
+    </span>
+  </div>
+
+  <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1c2421] leading-tight">
+    {place.title}
+  </h1>
+
+  <p class="text-sm sm:text-base text-[#5f6c65] leading-relaxed max-w-3xl font-sans">
+    {place.usp}
+  </p>
+</header>

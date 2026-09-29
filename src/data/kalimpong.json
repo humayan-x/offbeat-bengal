@@ -1,0 +1,266 @@
+[
+  {
+    "slug": "rishyap",
+    "title": "Rishyap",
+    "district": "kalimpong",
+    "category": "High-Altitude Hamlet",
+    "altitudeFeet": 8500,
+    "bestSeason": "October to April",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 105
+    },
+    "usp": "Unobstructed 300-degree vista of Mt. Kanchenjunga from Tiffin Dara viewpoint amid silent pine woods.",
+    "about": "Rishyap is a high, pine-forested hamlet above Lava, valued for quiet nights and big clear-weather views of the Kanchenjunga range. Tiffin Dara is the classic short uphill walk, while the village itself is for unhurried stays rather than busy sightseeing.",
+    "foodAndShopping": {"eat": ["Homestay meals, hot tea and simple Nepali breakfasts", "Momos, noodles and snacks in Lava before or after the drive"], "buy": ["Tea, packaged snacks and basic supplies from Lava", "Small locally made woollens or souvenirs when households offer them"], "note": "Rishyap has very limited retail. Arrange food with your stay, carry cash and collect essentials in Lava or Kalimpong."},
+    "faqs": [{"question": "How hard is the walk to Tiffin Dara?", "answer": "It is a short uphill forest walk—often described as about 3 km from Rishyap—but can feel demanding at altitude or after rain. Wear shoes with grip and start early."}, {"question": "Is a Kanchenjunga view guaranteed?", "answer": "No. Views depend completely on cloud and weather; dawn after a clear night gives you the best chance."}],
+    "idealDays": "2 Days",
+    "network": {
+      "jio": "Moderate",
+      "airtel": "Weak"
+    },
+    "geo": {
+      "lat": 27.1112,
+      "lng": 88.6526
+    }
+  },
+  {
+    "slug": "lolegaon",
+    "title": "Lolegaon",
+    "district": "kalimpong",
+    "category": "Forest Village",
+    "altitudeFeet": 5500,
+    "bestSeason": "October to May",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 98
+    },
+    "usp": "Famous Heritage Forest canopy hanging footbridge walk and scenic sunsets from Jhandi Dara.",
+    "about": "Lolegaon, also known locally as Kaffer, is a quiet Lepcha village on a forested Himalayan ridge. It pairs an old-growth heritage forest and canopy walk with sunrise or snow-range views from Jhandi Dara, and makes an easy slow-travel stop near Lava.",
+    "foodAndShopping": {"eat": ["Tea and simple snacks at the small bazaar by the Eco Park", "Homestay meals; carry a packed lunch on longer day outings"], "buy": ["Basic snacks and everyday supplies from the village bazaar", "Tea or small local keepsakes from Lava or Kalimpong"], "note": "West Bengal Tourism notes that the small area opposite the Eco Park is the main bazaar. Choice is limited, so do larger shopping before arriving."},
+    "faqs": [{"question": "Can I rely on Lolegaon for meals all day?", "answer": "There are small stalls near the Eco Park, but choices and hours are limited. Keep snacks with you and coordinate meals with your accommodation."}, {"question": "Is the canopy walk always open?", "answer": "Access and conditions can change with maintenance or weather. Ask locally on the day and never use a closed or restricted section."}],
+    "idealDays": "1-2 Days",
+    "network": {
+      "jio": "Good",
+      "airtel": "Moderate"
+    },
+    "geo": {
+      "lat": 27.0206,
+      "lng": 88.5562
+    }
+  },
+  {
+    "slug": "kolakham",
+    "title": "Kolakham",
+    "district": "kalimpong",
+    "category": "Wildlife Fringe Hamlet",
+    "altitudeFeet": 6500,
+    "bestSeason": "October to April",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 108
+    },
+    "usp": "Perched on the edge of Neora Valley National Park with views of Changey Falls and red panda habitats.",
+    "about": "Kolakham lies beside the Neora Valley National Park landscape, with dense forest, long valley views and Changey Falls nearby. It is a strong choice for birding and quiet nature time, but wildlife sightings—including red pandas—are never assured.",
+    "foodAndShopping": {"eat": ["Homestay cooking with seasonal vegetables and hot tea", "Momos and basic supplies in Lava, the practical nearby service stop"], "buy": ["Tea, snacks and rain gear from Lava", "Locally grown cardamom or produce only when legally and directly sold"], "note": "There is no meaningful shopping strip in Kolakham. Do not buy wildlife products or collect plants from the forest; plan meals and supplies before the final approach."},
+    "faqs": [{"question": "Can I enter Neora Valley National Park independently?", "answer": "Park access, routes and guide requirements are managed locally and can change. Check with forest authorities or an authorised operator before planning a trek."}, {"question": "How close is Changey Falls?", "answer": "West Bengal Tourism places it roughly 5 km beyond Kolakham, but mountain-road travel takes longer than the distance suggests. Confirm the current road condition locally."}],
+    "idealDays": "2-3 Days",
+    "network": {
+      "jio": "Weak",
+      "airtel": "Weak"
+    },
+    "geo": {
+      "lat": 27.1014,
+      "lng": 88.6778
+    }
+  },
+  {
+    "slug": "charkhole",
+    "title": "Charkhole",
+    "district": "kalimpong",
+    "category": "Offbeat Ridge Village",
+    "altitudeFeet": 5500,
+    "bestSeason": "October to May",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 72
+    },
+    "usp": "Secluded ridge surrounded by virgin oak and cypress forests offering clear views of the Eastern Himalayas.",
+    "about": "Charkhole is a small ridge village with oak, pine and cypress woodland around it and a wide Himalayan horizon on clear days. It suits travellers wanting birdsong, short walks and a quiet homestay rather than a commercial hill-station centre.",
+    "foodAndShopping": {"eat": ["Home-cooked Nepali and Bengali meals at homestays", "Tea, noodles and snacks bought before the village approach"], "buy": ["Seasonal vegetables, honey or preserves when offered by residents", "Tea and practical supplies from Kalimpong or Lava"], "note": "Retail is sparse and informal. Agree meal times with your host, take cash and stock up before reaching the village."},
+    "faqs": [{"question": "What makes Charkhole different from Lava or Kalimpong?", "answer": "It is quieter and less built-up, with fewer facilities but stronger ridge-and-forest atmosphere. Choose it for downtime, not shopping or nightlife."}, {"question": "Is it suitable in the monsoon?", "answer": "The forest is lush but views can be obscured and roads may be affected by rain. Check weather and local road advice before travelling."}],
+    "idealDays": "2 Days",
+    "network": {
+      "jio": "Moderate",
+      "airtel": "Moderate"
+    },
+    "geo": {
+      "lat": 27.0051,
+      "lng": 88.5289
+    }
+  },
+  {
+    "slug": "sillery-gaon",
+    "title": "Sillery Gaon",
+    "district": "kalimpong",
+    "category": "Silk Route Gateway",
+    "altitudeFeet": 6000,
+    "bestSeason": "October to April",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 95
+    },
+    "usp": "Known as 'New Darjeeling', featuring direct views of Kanchenjunga and the hike up to historic Damsang Fort.",
+    "about": "Sillery Gaon is a piney village in the Pedong area, known for Kanchenjunga views and its access to Ramitey viewpoint, Damsang Fort and Silence Valley. The nickname 'New Darjeeling' reflects the panorama, but the experience remains village-scale and homestay-led.",
+    "foodAndShopping": {"eat": ["Local homestay meals, tea and Nepali snacks", "Momos and groceries from Pedong before the final leg"], "buy": ["Tea, packaged snacks and useful supplies from Pedong", "Small handicrafts or seasonal produce when villagers offer them"], "note": "Official tourism information highlights homestays and local cuisine; it is not a retail destination. Carry cash and confirm meals and transport with your host."},
+    "faqs": [{"question": "What can I combine with Sillery Gaon?", "answer": "Ramitey viewpoint, Damsang Fort and nearby Pedong are the usual additions. Keep the plan flexible because mountain roads and weather set the pace."}, {"question": "Is Damsang Fort a formal museum?", "answer": "It is a historic site with ruins and a viewpoint feel, not a fully interpreted museum. Visit respectfully and follow any local access guidance."}],
+    "idealDays": "1-2 Days",
+    "network": {
+      "jio": "Good",
+      "airtel": "Moderate"
+    },
+    "geo": {
+      "lat": 27.1398,
+      "lng": 88.5837
+    }
+  },
+  {
+    "slug": "pedong",
+    "title": "Pedong",
+    "district": "kalimpong",
+    "category": "Historic Silk Route Town",
+    "altitudeFeet": 4900,
+    "bestSeason": "September to May",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 90
+    },
+    "usp": "Centuries-old Sangchen Dorjee Monastery, Cross Hill viewpoint, and ancient Bhutan-Tibet trade heritage.",
+    "about": "Pedong is a lived-in hill town on historic eastbound trade routes, with a stronger local-service feel than the surrounding hamlets. Use it for monastery visits, Cross Hill views, basic supplies and a glimpse of the area’s Lepcha, Bhutia and Nepali cultural mix.",
+    "foodAndShopping": {"eat": ["Momos, thukpa, chowmein and local Nepali meals in the town market", "Tea, bakeries and homestay food around Pedong"], "buy": ["Groceries, medicines, mobile basics and travel supplies", "Tea, local snacks and modest religious or craft souvenirs"], "note": "Pedong has more everyday services than nearby villages, though stock and opening hours are still hill-town variable. Ask before photographing inside monastery grounds."},
+    "faqs": [{"question": "Is Pedong a practical base for nearby villages?", "answer": "Yes. It is useful for supplies and connecting to Sillery Gaon, Rishop-side routes and eastern Kalimpong excursions; confirm taxis in advance for early starts."}, {"question": "Can visitors enter Sangchen Dorjee Monastery?", "answer": "Visitors are commonly welcomed in appropriate areas, but religious services and rules take priority. Dress modestly, remove shoes where requested and ask before photos."}],
+    "idealDays": "2 Days",
+    "network": {
+      "jio": "Good",
+      "airtel": "Good"
+    },
+    "geo": {
+      "lat": 27.1528,
+      "lng": 88.6142
+    }
+  },
+  {
+    "slug": "ramdhura",
+    "title": "Ramdhura",
+    "district": "kalimpong",
+    "category": "Hilltop Hamlet",
+    "altitudeFeet": 5000,
+    "bestSeason": "October to March",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 86
+    },
+    "usp": "Stunning vantage point over the curving Teesta River valley flanked by cinchona plantations and pine woods.",
+    "about": "Ramdhura is a compact hilltop village above the Teesta valley, with broad river bends, pine-covered slopes and a gentle village pace. It works well as a quiet alternative to busier Kalimpong, especially for sunrise views and short local walks.",
+    "foodAndShopping": {"eat": ["Homestay meals and tea with valley views", "Momos, snacks and groceries from Kalimpong or Pedong en route"], "buy": ["Seasonal fruit or garden produce when available", "Tea and practical supplies from Kalimpong town"], "note": "Most services are arranged through homestays. Bring cash, carry personal essentials and ask your host about the closest shop before arriving."},
+    "faqs": [{"question": "Is Ramdhura good for a one-night escape?", "answer": "Yes. One night lets you catch evening and morning valley light, though two nights feel more relaxed if you want time for nearby walks or Kalimpong."}, {"question": "Will I find reliable transport after dark?", "answer": "Do not count on it. Pre-arrange your pickup and return vehicle, especially in rain, winter fog or after sunset."}],
+    "idealDays": "1-2 Days",
+    "network": {
+      "jio": "Good",
+      "airtel": "Moderate"
+    },
+    "geo": {
+      "lat": 27.1352,
+      "lng": 88.5621
+    }
+  },
+  {
+    "slug": "bidyang",
+    "title": "Bidyang",
+    "district": "kalimpong",
+    "category": "Riverside Valley",
+    "altitudeFeet": 3200,
+    "bestSeason": "October to April",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 82
+    },
+    "usp": "Hidden riverside retreat across a bamboo hanging bridge on the Relli River, ideal for quiet camping.",
+    "about": "Bidyang is a low, riverside valley near the Relli River, known for its hanging bridge, forested banks and campsite-like quiet. It is warmer and more river-oriented than the high ridges, making it a good counterpoint to Kalimpong’s mountain viewpoints.",
+    "foodAndShopping": {"eat": ["Pre-arranged homestay or camp meals", "Simple tea and snacks; bring extra drinking water and trail food"], "buy": ["Seasonal farm produce or local honey if directly offered", "All essential groceries, medicines and gear from Kalimpong before departure"], "note": "Bidyang is remote and has few dependable shops. Do not rely on walk-in food service; confirm meals, safe drinking water and transport with your host or camp."},
+    "faqs": [{"question": "Is Bidyang suitable for river swimming?", "answer": "Treat the river with caution: current, depth and conditions change quickly, especially after rain. Swim only where a responsible local operator says it is safe."}, {"question": "What should I pack for a riverside stay?", "answer": "Bring insect repellent, a torch, rain protection, footwear with grip, personal medication and cash. Check mobile coverage and power arrangements with your stay."}],
+    "idealDays": "1-2 Days",
+    "network": {
+      "jio": "Moderate",
+      "airtel": "Weak"
+    },
+    "geo": {
+      "lat": 27.0874,
+      "lng": 88.5133
+    }
+  },
+  {
+    "slug": "lava",
+    "title": "Lava",
+    "district": "kalimpong",
+    "category": "Forest Gateway Town",
+    "altitudeFeet": 7710,
+    "bestSeason": "October to May",
+    "nearestHub": { "name": "NJP Railway Station", "distanceKm": 105 },
+    "usp": "A misty pine-forest town with a Bhutanese-origin monastery, Nature Interpretation Centre and access to Neora Valley National Park.",
+    "about": "Lava is the most practical high-forest base in this part of Kalimpong: fir, pine and birch forest meet a small but functioning town. Visit its monastery and Nature Interpretation Centre, watch for birds, and use it as the departure point for permitted Neora Valley plans or quieter stays in Rishyap and Kolakham.",
+    "foodAndShopping": { "eat": ["Momos, thukpa, noodles, tea and simple Tibetan–Nepali meals", "Bakery snacks and packed food for day outings"], "buy": ["Groceries, rain layers, basic medicines and trail snacks", "Tea and modest local souvenirs from town shops"], "note": "Lava is a supply stop, but mountain stocks can vary. Secure permits, guides and food before a Neora Valley trek rather than assuming arrangements will be available at the trailhead." },
+    "faqs": [{ "question": "Can I visit Neora Valley National Park from Lava?", "answer": "Lava is a recognised gateway, but entry rules, routes, permits and guide requirements must be checked with forest authorities or an authorised operator before you go." }, { "question": "Is Lava good for birdwatching?", "answer": "Yes, its forest habitat is a draw for birders. Early, quiet walks with binoculars are more useful than chasing sightings; never play calls or leave established paths." }],
+    "idealDays": "2 Days",
+    "network": { "jio": "Good", "airtel": "Moderate" },
+    "geo": { "lat": 27.065, "lng": 88.652 }
+  },
+  {
+    "slug": "samthar",
+    "title": "Samthar",
+    "district": "kalimpong",
+    "category": "Terraced Plateau Village",
+    "altitudeFeet": 4600,
+    "bestSeason": "October to May",
+    "nearestHub": { "name": "NJP Railway Station", "distanceKm": 75 },
+    "usp": "A quiet plateau of terraced fields, village paths, forest streams and open sunrise-to-sunset Himalayan views.",
+    "about": "Samthar is a dispersed, rural plateau away from Kalimpong’s busier ridges, with cultivated terraces, pools and forest-fringed hamlets. It rewards visitors who slow down for walking, birds and village life; the attraction is the landscape itself, not a built sightseeing circuit.",
+    "foodAndShopping": { "eat": ["Seasonal home-cooked meals arranged through a homestay", "Garden vegetables, tea and simple local snacks"], "buy": ["Seasonal produce, pickles or honey when directly offered by residents", "All major supplies from Kalimpong, Lava or your route in"], "note": "Samthar is spread out and services are limited. Book a host in advance, carry cash and avoid treating farms, pools and private paths as open public attractions." },
+    "faqs": [{ "question": "How do I reach Samthar from Lava?", "answer": "West Bengal Tourism describes an approximately 24 km road route via Lolegaon, while trekking starts near Gompa Dara. Confirm the road condition and vehicle suitability locally." }, { "question": "Is Samthar suited to independent trekking?", "answer": "Short village walks can be lovely, but routes cross rural and forest landscapes. Use a knowledgeable local guide for longer walks and respect private land." }],
+    "idealDays": "2 Days",
+    "network": { "jio": "Moderate", "airtel": "Weak" },
+    "geo": { "lat": 27.011, "lng": 88.506 }
+  },
+  {
+    "slug": "jhandi",
+    "title": "Jhandi",
+    "district": "kalimpong",
+    "category": "Gorubathan Ridge Hamlet",
+    "altitudeFeet": 5000,
+    "bestSeason": "October to April",
+    "nearestHub": { "name": "NJP Railway Station", "distanceKm": 87 },
+    "usp": "A cool, misty Gorubathan ridge with sunrise and sunset views across Kanchenjunga, the Nathula range and the Dooars.",
+    "about": "Jhandi sits above the Dooars in the Gorubathan block, blending ridge-top Himalayan views with a distinctly lower-hill forest setting. It is a calm homestay destination for sunrise, sunset and wide valley horizons, especially if you want to step away from the Lava–Kalimpong circuit.",
+    "foodAndShopping": { "eat": ["Homestay meals and hot tea", "Momos, snacks and basic meals stocked from Gorubathan"], "buy": ["Seasonal hill produce and small local goods when available", "Groceries, medicines and reliable supplies in Gorubathan"], "note": "The Kalimpong district tourism office confirms homestays and eco-huts, but facilities remain village-scale. Book ahead and carry warm layers because mist and wind can make evenings feel cold." },
+    "faqs": [{ "question": "What are Jhandi's main views?", "answer": "The district tourism office highlights sunrise and sunset, Kanchenjunga, the Nathula range and the Dooars. Visibility is weather-dependent, so keep expectations flexible." }, { "question": "Is Jhandi easy to reach by public transport?", "answer": "It is about 16 km from Gorubathan, but last-mile transport can be limited. Arrange the final pickup with your accommodation rather than arriving late without a plan." }],
+    "idealDays": "1-2 Days",
+    "network": { "jio": "Moderate", "airtel": "Moderate" },
+    "geo": { "lat": 26.982, "lng": 88.675 }
+  },
+  {
+    "slug": "paren",
+    "title": "Paren",
+    "district": "kalimpong",
+    "category": "Dooars-Edge Forest Village",
+    "altitudeFeet": 3000,
+    "bestSeason": "October to April",
+    "nearestHub": { "name": "NJP Railway Station", "distanceKm": 100 },
+    "usp": "A low, forest-edge village near the Jaldhaka valley, used as a quiet base for Dooars-facing scenery and rural Kalimpong excursions.",
+    "about": "Paren is a quieter, lower-elevation alternative to Kalimpong’s high ridges, sitting near the forest-and-river landscapes around Jaldhaka. Choose it for warm valley air, village stays and unhurried excursions; keep plans flexible because road conditions and services vary more than in the main town.",
+    "foodAndShopping": { "eat": ["Pre-arranged homestay meals with seasonal vegetables", "Tea and simple snacks; bring extras for day drives"], "buy": ["Seasonal fruit, honey or farm goods when directly sold", "Medicines, substantial groceries and gear before leaving Kalimpong or Gorubathan"], "note": "Paren is a rural stay, not a commercial hub. Confirm drinking water, meals, vehicle timing and current route conditions with your host before setting out." },
+    "faqs": [{ "question": "Is Paren a substitute for a wildlife safari base?", "answer": "No. It is a quiet rural base near forest landscapes, not a guaranteed wildlife-viewing destination. Never enter forest areas without permission or expect animal sightings." }, { "question": "What should I plan for on the road to Paren?", "answer": "Allow extra time, particularly after rain, and use a local driver familiar with the route. Avoid relying on after-dark arrivals or last-minute transport." }],
+    "idealDays": "1-2 Days",
+    "network": { "jio": "Moderate", "airtel": "Weak" },
+    "geo": { "lat": 27.034, "lng": 88.762 }
+  }
+]

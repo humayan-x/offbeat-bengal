@@ -1,0 +1,42 @@
+---
+import SearchModal from '../search/SearchModal.tsx';
+import type { Place } from '../../types/place';
+
+interface Props {
+  allPlaces: Place[];
+}
+
+const { allPlaces } = Astro.props;
+---
+
+<section class="relative pt-8 pb-12 sm:pt-12 sm:pb-16 md:pt-16 md:pb-20 border-b border-[#e5e0d8] bg-linear-to-b from-[#f3f0ea] to-[#f9f8f5]">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-4 sm:space-y-5">
+    <!-- Editorial Title -->
+    <div class="space-y-2">
+      <h1 class="font-serif text-2xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1c2421] leading-[1.2] sm:leading-[1.15]">
+        Ditch Mall Road. <br />
+        <span class="italic font-normal text-[#b45309]">Discover Pure Pahari Silence.</span>
+      </h1>
+      <p class="text-xs sm:text-base text-[#5f6c65] max-w-xl mx-auto leading-relaxed px-2">
+        Field-verified cellular coverage, transit distances from NJP, and calibrated elevations for quiet Himalayan forest hamlets.
+      </p>
+    </div>
+
+    <!-- Instant Search Field -->
+    <div class="pt-2 sm:pt-3 max-w-2xl mx-auto w-full">
+      <SearchModal client:load places={allPlaces} />
+    </div>
+
+    <!-- Curated Quick Landmarks -->
+    <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 pt-1 sm:pt-2 font-mono text-[11px] sm:text-xs text-[#7d8a83]">
+      <span class="text-[#4a5550]">Index lookup:</span>
+      <a href="/darjeeling/sittong" class="text-[#1c2421] hover:text-[#b45309] hover:underline transition">Sittong (4,000 ft)</a>
+      <span class="text-[#d6d0c4]">·</span>
+      <a href="/kalimpong/rishyap" class="text-[#1c2421] hover:text-[#b45309] hover:underline transition">Rishyap (8,500 ft)</a>
+      <span class="text-[#d6d0c4]">·</span>
+      <a href="/darjeeling/chatakpur" class="text-[#1c2421] hover:text-[#b45309] hover:underline transition">Chatakpur (7,887 ft)</a>
+      <span class="text-[#d6d0c4]">·</span>
+      <a href="/kalimpong/kolakham" class="text-[#1c2421] hover:text-[#b45309] hover:underline transition">Kolakham (6,500 ft)</a>
+    </div>
+  </div>
+</section>

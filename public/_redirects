@@ -1,0 +1,7 @@
+# Keep the extensionless, no-trailing-slash URLs canonical on Cloudflare Pages.
+/:district/:slug/ /:district/:slug 301
+/places/ /places 301
+
+# Preserve links to the previous place-detail URL format.
+/places/:district/:slug/ /:district/:slug 301
+/places/:district/:slug /:district/:slug 301

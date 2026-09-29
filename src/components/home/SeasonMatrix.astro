@@ -1,0 +1,69 @@
+---
+import { IconSun, IconCloudRain, IconSnowflake } from '@tabler/icons-astro';
+
+const seasons = [
+  {
+    period: "OCT – DEC",
+    title: "Autumn & Clear Horizons",
+    icon: IconSun,
+    badgeColor: "text-[#b45309] border-[#b45309]/30 bg-[#b45309]/5",
+    details: "Unbroken views of Mt. Kanchenjunga. Orange harvesting in full swing across Sittong and Chota Mangwa valleys.",
+    highlight: "Primary Focus: Panoramic views & clear sun"
+  },
+  {
+    period: "JAN – FEB",
+    title: "Crisp Himalayan Winter",
+    icon: IconSnowflake,
+    badgeColor: "text-[#2563eb] border-[#2563eb]/25 bg-[#2563eb]/5",
+    details: "Freezing clear nights and frosty mornings. Occasional snowfall near Chatakpur and Senchal high-altitude ridges.",
+    highlight: "Primary Focus: Fireplace stays & frost walks"
+  },
+  {
+    period: "MAR – MAY",
+    title: "Spring Bloom & Mild Mist",
+    icon: IconSun,
+    badgeColor: "text-[#2d4739] border-[#2d4739]/30 bg-[#2d4739]/5",
+    details: "Rhododendrons, wild magnolias, and orchids blossom along Lava, Rishyap, and Takdah forest trails.",
+    highlight: "Primary Focus: Forest trails & birdwatching"
+  },
+  {
+    period: "JUN – SEP",
+    title: "Monsoon & Living Mists",
+    icon: IconCloudRain,
+    badgeColor: "text-[#5f6c65] border-[#5f6c65]/30 bg-[#5f6c65]/5",
+    details: "Terraced emerald tea estates drenched in living mist. Mountain road cautions apply during peak downpours.",
+    highlight: "Primary Focus: Slow travel & tea solitude"
+  }
+];
+---
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 border-b border-[#e5e0d8]">
+  <div class="max-w-xl mx-auto text-center mb-10 space-y-2">
+    <span class="font-mono text-[10px] uppercase tracking-widest text-[#b45309] font-semibold">
+      CLIMATE & HARVEST CYCLES
+    </span>
+    <h2 class="font-serif text-2xl sm:text-3xl font-medium text-[#1c2421]">Himalayan Seasonal Ledger</h2>
+    <p class="text-xs sm:text-sm text-[#5f6c65] font-sans">Time your expedition with harvest seasons, mountain visibility, and weather patterns.</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    {seasons.map((season) => (
+      <div class="rounded border border-[#e5e0d8] bg-white p-5 flex flex-col justify-between space-y-4 shadow-2xs">
+        <div>
+          <div class="flex items-center justify-between gap-2 border-b border-[#f2efe9] pb-2.5">
+            <span class={`text-[10px] font-mono px-2 py-0.5 rounded border font-semibold ${season.badgeColor}`}>
+              {season.period}
+            </span>
+            <season.icon class="size-4 text-[#7d8a83]" />
+          </div>
+          <h3 class="font-serif text-base font-medium text-[#1c2421] mt-3">{season.title}</h3>
+          <p class="text-xs text-[#5f6c65] mt-2 leading-relaxed font-sans">{season.details}</p>
+        </div>
+
+        <div class="pt-3 border-t border-[#f2efe9] text-[11px] font-mono text-[#b45309]">
+          {season.highlight}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

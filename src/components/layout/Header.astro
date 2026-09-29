@@ -1,0 +1,132 @@
+---
+import { IconMenu2, IconX } from '@tabler/icons-astro';
+import darjeelingData from '../../data/darjeeling.json';
+import kalimpongData from '../../data/kalimpong.json';
+
+const darjeelingCount = darjeelingData.length;
+const kalimpongCount = kalimpongData.length;
+const totalPlaceCount = darjeelingCount + kalimpongCount;
+---
+
+<header class="fixed inset-x-0 top-0 z-40 border-b border-[#e5e0d8] bg-[#f9f8f5]/95 backdrop-blur-md transition-colors md:sticky">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <a href="/" class="group flex items-center gap-1.5">
+      <span class="relative size-7 shrink-0" aria-hidden="true">
+        <img
+          src="/offbeat-bengal-logo.png"
+          alt=""
+          width="28"
+          height="28"
+          class="absolute inset-0 size-full object-contain transition-opacity duration-200 group-hover:opacity-0"
+        />
+        <img
+          src="/offbeat-bengal-hover-logo.png"
+          alt=""
+          width="28"
+          height="28"
+          class="absolute inset-0 size-full object-contain opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+        />
+      </span>
+      <span class="font-serif text-xl sm:text-2xl tracking-tight text-[#1c2421] leading-none group-hover:text-[#b45309] transition">
+        Offbeat <span class="italic font-normal">Bengal</span>
+      </span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-6 sm:gap-8 text-xs font-medium tracking-wide">
+      <a href="/places/darjeeling" class="text-[#4a5550] hover:text-[#1c2421] transition hover:underline underline-offset-4 decoration-[#b45309]">
+        Darjeeling
+      </a>
+      <a href="/places/kalimpong" class="text-[#4a5550] hover:text-[#1c2421] transition hover:underline underline-offset-4 decoration-[#b45309]">
+        Kalimpong
+      </a>
+      <a 
+        href="/places" 
+        class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded border border-[#2d4739] bg-[#2d4739] text-[11px] font-semibold text-[#f9f8f5] hover:bg-[#1c2421] transition shadow-xs"
+      >
+        <span>Places</span>
+        <span class="font-mono text-[10px]">{totalPlaceCount}</span>
+      </a>
+    </nav>
+
+    <!-- Mobile Hamburger Toggle Button -->
+    <div class="flex items-center md:hidden">
+      <button
+        id="mobile-menu-btn"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        class="flex size-8 items-center justify-center rounded border border-[#e5e0d8] bg-white text-[#1c2421] hover:bg-[#f2efe9] transition cursor-pointer"
+      >
+        <span id="menu-icon-open" class="block">
+          <IconMenu2 class="size-4" />
+        </span>
+        <span id="menu-icon-close" class="hidden">
+          <IconX class="size-4" />
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div 
+    id="mobile-menu"
+    class="absolute inset-x-0 top-full hidden md:hidden border-b border-[#e5e0d8] bg-[#f9f8f5]/98 px-4 pt-3 pb-4 space-y-3 font-sans shadow-lg backdrop-blur-md transition-all"
+  >
+    <div class="font-mono text-[10px] uppercase tracking-widest text-[#7d8a83] pb-1 border-b border-[#e5e0d8]/60">
+      EXPLORE SUB-DIVISIONS
+    </div>
+    <div class="grid grid-cols-2 gap-2">
+      <a 
+        href="/places/darjeeling" 
+        class="flex min-h-17 flex-col p-2.5 rounded border border-[#e5e0d8] bg-white text-[#1c2421] hover:border-[#b45309] hover:bg-[#fdfaf7] transition"
+      >
+        <span class="font-serif text-base font-medium">Darjeeling</span>
+        <span class="font-mono text-[10px] text-[#7d8a83] mt-0.5">{darjeelingCount} Hamlets</span>
+      </a>
+      <a 
+        href="/places/kalimpong" 
+        class="flex min-h-17 flex-col p-2.5 rounded border border-[#e5e0d8] bg-white text-[#1c2421] hover:border-[#b45309] hover:bg-[#fdfaf7] transition"
+      >
+        <span class="font-serif text-base font-medium">Kalimpong</span>
+        <span class="font-mono text-[10px] text-[#7d8a83] mt-0.5">{kalimpongCount} Hamlets</span>
+      </a>
+    </div>
+    <a 
+      href="/places" 
+      class="flex min-h-11 items-center justify-between w-full gap-2 px-4 py-2.5 rounded border border-[#2d4739] bg-[#2d4739] text-xs font-semibold text-[#f9f8f5] hover:bg-[#1c2421] transition shadow-xs"
+    >
+      <span>Browse Complete Directory Index</span>
+      <span class="font-mono text-[11px]">{totalPlaceCount} spots &rarr;</span>
+    </a>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('menu-icon-open');
+  const iconClose = document.getElementById('menu-icon-close');
+
+  if (btn && menu && iconOpen && iconClose) {
+    btn.addEventListener('click', () => {
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!isExpanded));
+      menu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    });
+
+    // Close menu when clicking outside or navigating
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target as Node) && !btn.contains(e.target as Node)) {
+        if (!menu.classList.contains('hidden')) {
+          menu.classList.add('hidden');
+          iconOpen.classList.remove('hidden');
+          iconClose.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+  }
+</script>

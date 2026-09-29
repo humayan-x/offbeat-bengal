@@ -1,0 +1,46 @@
+---
+import { IconAntenna } from '@tabler/icons-astro';
+
+interface Props {
+  network: {
+    jio: string;
+    airtel: string;
+  };
+}
+
+const { network } = Astro.props;
+
+const getStatusBadge = (val: string) => {
+  const normalized = val.toLowerCase();
+  if (normalized === 'good') {
+    return 'text-[#166534] bg-[#f0fdf4] border-[#bbf7d0]';
+  }
+  if (normalized === 'moderate') {
+    return 'text-[#9a3412] bg-[#fff7ed] border-[#fed7aa]';
+  }
+  return 'text-[#991b1b] bg-[#fef2f2] border-[#fecaca]';
+};
+---
+
+<div class="rounded border border-[#e5e0d8] bg-white p-5 shadow-2xs">
+  <div class="flex items-center gap-2 mb-3.5 text-[#1c2421] font-mono text-[10px] uppercase tracking-wider font-semibold">
+    <IconAntenna class="size-4 text-[#2d4739]" />
+    <span>Radio & Cellular Field Status</span>
+  </div>
+
+  <div class="grid grid-cols-1 min-[440px]:grid-cols-2 gap-3 text-sm">
+    <div class="flex items-center justify-between gap-2 rounded border border-[#f2efe9] bg-[#f9f8f5] px-3.5 py-2.5">
+      <span class="font-mono text-xs text-[#4a5550]">Jio Telecom</span>
+      <span class={`font-mono text-[11px] px-2 py-0.5 rounded border font-semibold ${getStatusBadge(network.jio)}`}>
+        {network.jio}
+      </span>
+    </div>
+
+    <div class="flex items-center justify-between gap-2 rounded border border-[#f2efe9] bg-[#f9f8f5] px-3.5 py-2.5">
+      <span class="font-mono text-xs text-[#4a5550]">Airtel Network</span>
+      <span class={`font-mono text-[11px] px-2 py-0.5 rounded border font-semibold ${getStatusBadge(network.airtel)}`}>
+        {network.airtel}
+      </span>
+    </div>
+  </div>
+</div>

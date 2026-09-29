@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PlacesDirectory from '../../components/places/PlacesDirectory.tsx';
+import kalimpongData from '../../data/kalimpong.json';
+import type { Place } from '../../types/place';
+
+const kalimpong = kalimpongData as Place[];
+
+const placeCount = kalimpong.length;
+const pageTitle = `Offbeat Places in Kalimpong — ${placeCount} Secluded Ridges & Valleys`;
+const pageDescription = `Explore ${placeCount} peaceful Kalimpong stays including Rishyap, Lolegaon, Kolakham, Lava and Jhandi. Elevation, best seasons, and transit metrics.`;
+---
+
+<BaseLayout>
+  <head slot="head">
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <link rel="canonical" href="https://offbeat-bengal.pages.dev/places/kalimpong" />
+  </head>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <PlacesDirectory
+      client:load
+      initialPlaces={kalimpong}
+      eyebrow={`Sub-division Register · ${String(placeCount).padStart(2, '0')} Hamlets`}
+      title="Offbeat Hamlets in Kalimpong"
+      description="Silk Route trade hamlets, Neora Valley forest edges, and secluded pine ridges offering front-row Eastern Himalayan viewpoints."
+    />
+  </div>
+</BaseLayout>

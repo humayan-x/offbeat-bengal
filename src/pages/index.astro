@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeHero from '../components/home/HomeHero.astro';
+import WhyOffbeat from '../components/home/WhyOffbeat.astro';
+import PlaceCard from '../components/places/PlaceCard.astro';
+import FAQSection from '../components/home/FAQSection.astro';
+import SeasonMatrix from '../components/home/SeasonMatrix.astro';
+
+import darjeelingData from '../data/darjeeling.json';
+import kalimpongData from '../data/kalimpong.json';
+import type { Place } from '../types/place';
+import { IconArrowRight, IconMapPin } from '@tabler/icons-astro';
+
+const darjeeling = darjeelingData as Place[];
+const kalimpong = kalimpongData as Place[];
+
+const featuredDarjeeling = darjeeling.slice(0, 4);
+const featuredKalimpong = kalimpong.slice(0, 4);
+const allPlaces = [...darjeeling, ...kalimpong];
+
+const pageTitle = "Offbeat Bengal — Himalayan Field Guide & Mountain Hamlets";
+const pageDescription = "Archival field guide to quiet hamlets, pine villages, and viewpoints across Darjeeling and Kalimpong with altitudes, mobile networks, and transit distances.";
+---
+
+<BaseLayout>
+  <head slot="head">
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <link rel="canonical" href="https://offbeat-bengal.pages.dev" />
+  </head>
+
+  <!-- Hero with Field Search -->
+  <HomeHero allPlaces={allPlaces} />
+
+  <!-- Main Directory Sections -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 space-y-16">
+    <!-- Chapter 01: Darjeeling Selection -->
+    <section class="space-y-6">
+      <div class="flex flex-col items-start gap-3 border-b border-[#e5e0d8] pb-3 sm:flex-row sm:items-end sm:justify-between">
+        <div class="min-w-0">
+          <div class="font-mono text-[10px] uppercase tracking-widest text-[#7d8a83] flex items-center gap-1.5 mb-1">
+            <span class="text-[#b45309] font-bold">CHAPTER 01</span>
+            <span>/</span>
+            <span>HIMALAYAN RIDGE REGION</span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-3xl font-medium text-[#1c2421]">Quiet Corners of Darjeeling</h2>
+        </div>
+        <a 
+          href="/places/darjeeling" 
+          class="inline-flex min-h-11 items-center gap-1 text-xs font-mono font-medium text-[#4a5550] hover:text-[#b45309] transition sm:min-h-0 sm:pb-0.5"
+        >
+          <span>All {darjeeling.length} Hamlets</span>
+          <IconArrowRight class="size-3.5" />
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {featuredDarjeeling.map((place) => (
+          <PlaceCard place={place} />
+        ))}
+      </div>
+    </section>
+
+    <!-- Chapter 02: Kalimpong Selection -->
+    <section class="space-y-6">
+      <div class="flex flex-col items-start gap-3 border-b border-[#e5e0d8] pb-3 sm:flex-row sm:items-end sm:justify-between">
+        <div class="min-w-0">
+          <div class="font-mono text-[10px] uppercase tracking-widest text-[#7d8a83] flex items-center gap-1.5 mb-1">
+            <span class="text-[#b45309] font-bold">CHAPTER 02</span>
+            <span>/</span>
+            <span>PINE FORESTS & SILK ROUTE</span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-3xl font-medium text-[#1c2421]">Secluded Hamlets of Kalimpong</h2>
+        </div>
+        <a 
+          href="/places/kalimpong" 
+          class="inline-flex min-h-11 items-center gap-1 text-xs font-mono font-medium text-[#4a5550] hover:text-[#b45309] transition sm:min-h-0 sm:pb-0.5"
+        >
+          <span>All {kalimpong.length} Hamlets</span>
+          <IconArrowRight class="size-3.5" />
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {featuredKalimpong.map((place) => (
+          <PlaceCard place={place} />
+        ))}
+      </div>
+    </section>
+
+    <!-- Transition Index Banner -->
+    <section class="rounded border border-[#e5e0d8] bg-[#f2efe9] p-5 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-5 sm:gap-6">
+      <div class="space-y-1.5 text-center md:text-left">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-[#b45309] font-semibold">
+          Complete Programmatic Index
+        </span>
+        <h2 class="font-serif text-2xl font-medium text-[#1c2421]">
+          Explore the Full {allPlaces.length}-Place Directory
+        </h2>
+        <p class="text-xs sm:text-sm text-[#5f6c65] max-w-xl">
+          Filter by district, sort by altitude from 3,200 to 8,500 ft, and inspect field cellular coverage before heading into the hills.
+        </p>
+      </div>
+      <div class="shrink-0">
+        <a
+          href="/places"
+          class="inline-flex min-h-11 items-center gap-2 rounded border border-[#1c2421] bg-[#1c2421] px-5 py-2.5 text-xs font-semibold text-white hover:bg-[#2d4739] hover:border-[#2d4739] transition shadow-xs"
+        >
+          <span>Open Full Index</span>
+          <IconArrowRight class="size-3.5" />
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Why Offbeat Feature Section -->
+  <WhyOffbeat />
+
+  <!-- Seasonal Guide Section -->
+  <SeasonMatrix />
+
+  <!-- Accordion FAQ with Structured Data -->
+  <FAQSection />
+</BaseLayout>

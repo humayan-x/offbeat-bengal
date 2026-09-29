@@ -1,0 +1,80 @@
+---
+import { IconChevronDown } from '@tabler/icons-astro';
+
+const faqs = [
+  {
+    num: "01",
+    question: "What is the best time to visit offbeat hamlets in North Bengal?",
+    answer: "October to December offers the clearest Himalayan views, vibrant orange harvests in Sittong and Chota Mangwa, and crisp pleasant weather. March to May is the rhododendron and orchid blooming season across higher elevations like Chatakpur and Lepchajagat."
+  },
+  {
+    num: "02",
+    question: "How do I reach these remote villages from NJP or Bagdogra?",
+    answer: "Shared jeeps depart Siliguri and NJP regularly up to major transit hubs (Kurseong, Kalimpong town, Ghoom, or Lava). From there, you can hire local syndicate cabs or request your homestay to arrange a direct pickup."
+  },
+  {
+    num: "03",
+    question: "Is mobile internet reliable for remote work in these places?",
+    answer: "Jio offers the most consistent 4G/5G edge coverage across ridge hamlets like Pedong, Sittong, and Lamahatta. Deeper forest reserves (Chatakpur, Kolakham) frequently experience power fluctuations and intermittent connectivity."
+  },
+  {
+    num: "04",
+    question: "Do I need special permits to visit these destinations?",
+    answer: "Indian nationals do not require special entry permits for Darjeeling or Kalimpong hamlets, though forest entry fees apply at Neora Valley and Senchal Wildlife checkpoints. Foreign nationals require an Inner Line Permit (ILP) only if crossing north into Sikkim."
+  },
+  {
+    num: "05",
+    question: "What kind of stays are available in offbeat Bengal?",
+    answer: "Most remote hamlets run eco-homestays operated by local Lepcha, Nepali, and Bhutia families. They provide home-cooked meals, hot water, and authentic mountain hospitality rather than commercial hotel amenities."
+  }
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+---
+
+<!-- JSON-LD Injection for Google FAQ Rich Results -->
+<script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
+
+<section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+  <div class="text-center space-y-2 mb-10">
+    <div class="font-mono text-[10px] uppercase tracking-widest text-[#b45309] font-semibold">
+      FIELD NOTES & LOGISTICS
+    </div>
+    <h2 class="font-serif text-2xl sm:text-3xl font-medium text-[#1c2421]">
+      Expedition Inquiries
+    </h2>
+    <p class="text-xs sm:text-sm text-[#5f6c65] font-sans">
+      Essential travel protocols, connectivity insights, and transit routing.
+    </p>
+  </div>
+
+  <div class="space-y-3">
+    {faqs.map((faq) => (
+      <details class="group rounded border border-[#e5e0d8] bg-white transition-all [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex min-h-13 cursor-pointer items-start justify-between gap-3 p-4 sm:items-center sm:p-5 text-sm sm:text-base font-serif font-medium text-[#1c2421] group-hover:text-[#b45309] transition select-none">
+          <div class="flex min-w-0 items-start gap-3 sm:items-center">
+            <span class="shrink-0 font-mono text-xs text-[#7d8a83]">{faq.num}</span>
+            <span class="min-w-0">{faq.question}</span>
+          </div>
+          <span class="shrink-0 rounded p-1 text-[#7d8a83] group-hover:text-[#b45309] transition group-open:rotate-180">
+            <IconChevronDown class="size-4" />
+          </span>
+        </summary>
+        <div class="px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm leading-relaxed text-[#5f6c65] border-t border-[#f2efe9] pt-3 font-sans">
+          {faq.answer}
+        </div>
+      </details>
+    ))}
+  </div>
+</section>

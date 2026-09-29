@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://offbeat-bengal.pages.dev/sitemap-index.xml

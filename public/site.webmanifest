@@ -1,0 +1,24 @@
+{
+  "name": "Offbeat Bengal",
+  "short_name": "Offbeat Bengal",
+  "description": "A field guide to hidden villages and mountain hamlets across the Eastern Himalayan foothills.",
+  "start_url": "/",
+  "id": "/",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#2d4739",
+  "background_color": "#f9f8f5",
+  "display": "standalone"
+}

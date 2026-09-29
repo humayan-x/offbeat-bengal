@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PlacesDirectory from '../../components/places/PlacesDirectory.tsx';
+
+import darjeelingData from '../../data/darjeeling.json';
+import kalimpongData from '../../data/kalimpong.json';
+import type { Place } from '../../types/place';
+
+const allPlaces: Place[] = [
+  ...(darjeelingData as Place[]),
+  ...(kalimpongData as Place[]),
+];
+
+const pageTitle = `Complete North Bengal Destination Index (${allPlaces.length} Verified Places)`;
+const pageDescription = `Explore the complete database of ${allPlaces.length} hill stays in Darjeeling and Kalimpong, with elevations and connectivity details.`;
+---
+
+<BaseLayout>
+  <head slot="head">
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <link rel="canonical" href="https://offbeat-bengal.pages.dev/places" />
+  </head>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <PlacesDirectory
+      client:load
+      initialPlaces={allPlaces}
+      eyebrow="Programmatic Directory"
+      title="North Bengal Destination Index"
+      description="Every secluded hill village, pine ridge settlement, and riverside retreat in Darjeeling and Kalimpong indexed with surveyed elevations and road logistics."
+    />
+  </div>
+</BaseLayout>

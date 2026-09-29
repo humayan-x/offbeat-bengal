@@ -1,0 +1,52 @@
+---
+import type { Place } from '../../types/place';
+import { IconCalendar, IconClock, IconCar, IconArrowUpRight } from '@tabler/icons-astro';
+
+interface Props {
+  place: Place;
+}
+
+const { place } = Astro.props;
+---
+
+<section class="grid grid-cols-1 min-[390px]:grid-cols-2 sm:grid-cols-4 gap-3">
+  <div class="min-w-0 rounded border border-[#e5e0d8] bg-white p-4 shadow-2xs">
+    <div class="flex items-center gap-1.5 text-[#7d8a83] font-mono text-[10px] uppercase tracking-wider font-semibold">
+      <IconArrowUpRight class="size-3.5 text-[#b45309]" />
+      Surveyed Elevation
+    </div>
+    <p class="mt-2 font-mono text-xl font-medium text-[#1c2421] tracking-tight">
+      {place.altitudeFeet.toLocaleString()} <span class="text-xs font-normal text-[#7d8a83]">ft</span>
+    </p>
+  </div>
+
+  <div class="min-w-0 rounded border border-[#e5e0d8] bg-white p-4 shadow-2xs">
+    <div class="flex items-center gap-1.5 text-[#7d8a83] font-mono text-[10px] uppercase tracking-wider font-semibold">
+      <IconCalendar class="size-3.5 text-[#b45309]" />
+      Optimal Season
+    </div>
+    <p class="mt-2 font-serif text-sm font-medium text-[#1c2421] line-clamp-2">
+      {place.bestSeason}
+    </p>
+  </div>
+
+  <div class="min-w-0 rounded border border-[#e5e0d8] bg-white p-4 shadow-2xs">
+    <div class="flex items-center gap-1.5 text-[#7d8a83] font-mono text-[10px] uppercase tracking-wider font-semibold">
+      <IconClock class="size-3.5 text-[#b45309]" />
+      Pacing Guide
+    </div>
+    <p class="mt-2 font-serif text-sm font-medium text-[#1c2421]">
+      {place.idealDays} Recommended
+    </p>
+  </div>
+
+  <div class="min-w-0 rounded border border-[#e5e0d8] bg-white p-4 shadow-2xs">
+    <div class="flex items-center gap-1.5 text-[#7d8a83] font-mono text-[10px] uppercase tracking-wider font-semibold">
+      <IconCar class="size-3.5 text-[#b45309]" />
+      Transit Distance
+    </div>
+    <p class="mt-2 font-mono text-xs text-[#1c2421]">
+      <strong class="font-semibold text-sm">{place.nearestHub.distanceKm} km</strong> <span class="text-[#7d8a83]">from {place.nearestHub.name}</span>
+    </p>
+  </div>
+</section>

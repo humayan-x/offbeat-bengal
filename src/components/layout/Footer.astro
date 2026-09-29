@@ -1,0 +1,83 @@
+---
+import { IconBrandGithub, IconMapPin } from '@tabler/icons-astro';
+import darjeelingData from '../../data/darjeeling.json';
+import kalimpongData from '../../data/kalimpong.json';
+
+const darjeelingCount = darjeelingData.length;
+const kalimpongCount = kalimpongData.length;
+const totalPlaceCount = darjeelingCount + kalimpongCount;
+---
+
+<footer class="border-t border-[#e5e0d8] bg-[#f2efe9] py-12 text-sm text-[#4a5550]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="md:col-span-2 space-y-3">
+      <div class="flex items-center gap-1.5 text-[#1c2421]">
+        <a href="/" class="group relative size-8 shrink-0" aria-label="Offbeat Bengal home">
+          <img
+            src="/offbeat-bengal-logo.png"
+            alt=""
+            width="32"
+            height="32"
+            class="absolute inset-0 size-full object-contain transition-opacity duration-200 group-hover:opacity-0"
+          />
+          <img
+            src="/offbeat-bengal-hover-logo.png"
+            alt=""
+            width="32"
+            height="32"
+            class="absolute inset-0 size-full object-contain opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+          />
+        </a>
+        <span class="font-serif font-semibold text-lg tracking-tight">Offbeat Bengal</span>
+      </div>
+      <p class="text-xs text-[#5f6c65] max-w-md leading-relaxed font-sans">
+        A gentle guide to hidden villages, misty ridges, and welcoming homestays across the Eastern Himalayan foothills.
+      </p>
+      <div class="font-mono text-[11px] text-[#7d8a83] flex items-start gap-1.5 pt-1">
+        <IconMapPin class="size-3 text-[#b45309]" />
+        <span>Latitude 26°55'N – 27°15'N · Elevations to 8,500 ft</span>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#1c2421] mb-3">
+        Sub-Divisions
+      </h3>
+      <ul class="space-y-2 text-xs">
+        <li>
+          <a href="/places/darjeeling" class="hover:text-[#b45309] transition flex items-center justify-between group">
+            <span>Darjeeling Ridge</span>
+            <span class="font-mono text-[11px] text-[#7d8a83] group-hover:text-[#b45309]">{String(darjeelingCount).padStart(2, '0')} spots</span>
+          </a>
+        </li>
+        <li>
+          <a href="/places/kalimpong" class="hover:text-[#b45309] transition flex items-center justify-between group">
+            <span>Kalimpong Hills</span>
+            <span class="font-mono text-[11px] text-[#7d8a83] group-hover:text-[#b45309]">{String(kalimpongCount).padStart(2, '0')} spots</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#1c2421] mb-3">
+        Archive
+      </h3>
+      <ul class="space-y-2 text-xs">
+        <li>
+          <a href="/places" class="hover:text-[#b45309] transition">Complete {totalPlaceCount}-Place Index</a>
+        </li>
+        <li>
+          <a href="https://github.com/humayan-x/offbeat-bengal" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 hover:text-[#1c2421] transition">
+            <IconBrandGithub class="size-3.5 text-[#2d4739]" /> Open Source Register
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-[#e5e0d8] flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 text-center sm:text-left text-xs text-[#7d8a83] font-mono">
+    <span>© {new Date().getFullYear()} Offbeat Bengal. Curated local documentation.</span>
+    <span class="shrink-0">Static Edge Deployment · Zero tracking</span>
+  </div>
+</footer>

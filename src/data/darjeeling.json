@@ -1,0 +1,266 @@
+[
+  {
+    "slug": "lepchajagat",
+    "title": "Lepchajagat",
+    "district": "darjeeling",
+    "category": "Forest Reserve Hamlet",
+    "altitudeFeet": 6956,
+    "bestSeason": "October to April",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 75
+    },
+    "usp": "Quiet pine and rhododendron forest reserve near Ghoom with framing views of Kanchenjunga.",
+    "about": "Lepchajagat is a small, forest-edge Lepcha village on the Ghoom–Mirik road, about 19 km from Darjeeling. Come for unhurried walks through oak and rhododendron woodland and, on a clear morning, a wide Kanchenjunga view rather than a packed sightseeing schedule.",
+    "foodAndShopping": {"eat": ["Home-cooked Nepali and Bengali meals arranged by your stay", "Tea, momos and simple snacks in nearby Sukhiapokhri or Ghoom"], "buy": ["Darjeeling tea and local snacks from Ghoom or Sukhiapokhri", "Small locally made woollens or everyday handicrafts when available"], "note": "There is no dependable village market here. Carry essentials and plan proper shopping for Darjeeling, Ghoom or Sukhiapokhri."},
+    "faqs": [{"question": "Is Lepchajagat a day trip or an overnight stop?", "answer": "It works as a quiet stop from Darjeeling, but an overnight stay gives the best chance of an early mountain view and a slower forest walk."}, {"question": "Will I find restaurants and ATMs in the village?", "answer": "Facilities are limited. Confirm meals with your accommodation, carry cash, and use Ghoom, Sukhiapokhri or Darjeeling for ATMs, supplies and more choice."}],
+    "idealDays": "1-2 Days",
+    "network": {
+      "jio": "Good",
+      "airtel": "Moderate"
+    },
+    "geo": {
+      "lat": 27.0094,
+      "lng": 88.2045
+    }
+  },
+  {
+    "slug": "chatakpur",
+    "title": "Chatakpur",
+    "district": "darjeeling",
+    "category": "Eco-Village",
+    "altitudeFeet": 7887,
+    "bestSeason": "October to May",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 80
+    },
+    "usp": "High-altitude organic village tucked inside Senchal Wildlife Sanctuary offering watchtower panoramic views.",
+    "about": "Chatakpur is an eco-tourism village inside Senchal Wildlife Sanctuary, with village-run homestays, terrace plots and a forest watchtower. Its appeal is the stillness: cloud, conifer forest and a clear-weather panorama that can include Kanchenjunga and the Sandakphu ridge.",
+    "foodAndShopping": {"eat": ["Homestay meals using seasonal vegetables from village terraces", "Tea and simple Nepali-style breakfasts or snacks"], "buy": ["Seasonal organic vegetables or preserves if residents have a surplus", "Small local handicrafts only when offered directly by households"], "note": "This is a sanctuary village, not a shopping stop. Pre-book meals with your homestay and avoid expecting a bazaar or late-night food outlets."},
+    "faqs": [{"question": "Do I need to arrange my stay before reaching Chatakpur?", "answer": "Yes. Accommodation is primarily village homestays and the approach is through forest roads, so book ahead and reconfirm road conditions with your host."}, {"question": "Can I walk freely in the sanctuary?", "answer": "Stay on permitted village and viewpoint routes, follow local or forest-staff advice, and do not count on independent deep-forest access."}],
+    "idealDays": "2 Days",
+    "network": {
+      "jio": "Weak",
+      "airtel": "Weak"
+    },
+    "geo": {
+      "lat": 26.9741,
+      "lng": 88.2933
+    }
+  },
+  {
+    "slug": "lamahatta",
+    "title": "Lamahatta",
+    "district": "darjeeling",
+    "category": "Eco-Park Village",
+    "altitudeFeet": 5700,
+    "bestSeason": "September to May",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 72
+    },
+    "usp": "Manicured roadside pine park, wooden watchtowers, and a sacred hillside lake reached via a forest trail.",
+    "about": "Lamahatta is a roadside Himalayan village best known for its pine-lined eco park and a short uphill trail to a sacred lake. It is an easy, scenic pause between Darjeeling and Kalimpong, with forest views rather than strenuous trekking at its centre.",
+    "foodAndShopping": {"eat": ["Tea, momos and simple roadside snacks around the approach road", "Homestay-style Nepali meals with advance notice"], "buy": ["Tea, packaged snacks and small local souvenirs from roadside stalls", "Seasonal produce when village sellers have it"], "note": "The village has a few small stalls, but selection varies. For pharmacy items, larger groceries or reliable cash access, stock up in Darjeeling or Kalimpong."},
+    "faqs": [{"question": "How demanding is the walk to Lamahatta's sacred lake?", "answer": "It is a short uphill forest walk with steps and uneven ground. Wear shoes with grip and take it gently in wet weather or if you are not acclimatised."}, {"question": "Can I visit Lamahatta during rain?", "answer": "Yes if roads are open, but mist may hide the views and trails can be slick. Check current weather and road updates before committing to the drive."}],
+    "idealDays": "1-2 Days",
+    "network": {
+      "jio": "Good",
+      "airtel": "Good"
+    },
+    "geo": {
+      "lat": 27.0428,
+      "lng": 88.3533
+    }
+  },
+  {
+    "slug": "takdah",
+    "title": "Takdah",
+    "district": "darjeeling",
+    "category": "Colonial Heritage Hamlet",
+    "altitudeFeet": 4000,
+    "bestSeason": "October to March",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 77
+    },
+    "usp": "Former British cantonment featuring vintage 19th-century bungalows, orchid centers, and mist-laden tea trails.",
+    "about": "Takdah retains the spacious lanes, old bungalows and quiet military-era character of a former British cantonment. Tea gardens, orchids and misty walks make it a good base for travellers who would rather linger in the hills than rush through Darjeeling town.",
+    "foodAndShopping": {"eat": ["Homestay meals and tea-garden-style snacks", "Momos, thukpa and simple local meals in the Takdah–Teesta Bazaar area"], "buy": ["Packed Darjeeling tea from estates or reputable local sellers", "Seasonal orchids or nursery plants only from legitimate growers"], "note": "Takdah is spread out and shops are modest. Confirm meal arrangements and buy specialty items from established sellers rather than roadside plants or wildlife products."},
+    "faqs": [{"question": "What is Takdah best for?", "answer": "Choose it for heritage atmosphere, tea-country walks and a relaxed overnight stay; it is not the place for a dense menu of urban attractions."}, {"question": "Can I see inside the old bungalows?", "answer": "Many are private homes, government properties or accommodation. Enjoy them from public roads unless a host or property explicitly welcomes visitors."}],
+    "idealDays": "2 Days",
+    "network": {
+      "jio": "Moderate",
+      "airtel": "Moderate"
+    },
+    "geo": {
+      "lat": 27.0396,
+      "lng": 88.3615
+    }
+  },
+  {
+    "slug": "tinchuley",
+    "title": "Tinchuley",
+    "district": "darjeeling",
+    "category": "Hill Ridge Village",
+    "altitudeFeet": 5800,
+    "bestSeason": "October to April",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 73
+    },
+    "usp": "Named after 'Three Ovens' hilltops; known for Gumbadara viewpoint, Peshok tea vistas, and orange orchards.",
+    "about": "Tinchuley sits on a ridge above the Teesta valley, named for the three hilltops that resemble earthen ovens. It combines broad views from Gumbadara with tea slopes, orange trees and an easygoing homestay rhythm.",
+    "foodAndShopping": {"eat": ["Homestay Nepali meals, tea and seasonal vegetables", "Fresh oranges or orange-based snacks in the winter harvest period"], "buy": ["In-season oranges, squash or marmalade when produced locally", "Darjeeling tea from nearby Peshok-area outlets"], "note": "Orange products are seasonal and stock is small-batch. Ask before picking fruit, and arrange meals through your stay rather than relying on restaurants."},
+    "faqs": [{"question": "When are Tinchuley's oranges available?", "answer": "Winter is the usual harvest window, but timing and availability change with the crop. Treat orchard purchases as a seasonal bonus, not a guarantee."}, {"question": "Is Tinchuley suitable for a short stay?", "answer": "Yes. One or two nights are enough for Gumbadara, tea-country views and a slow village walk; stay longer if you want nearby excursions."}],
+    "idealDays": "2 Days",
+    "network": {
+      "jio": "Good",
+      "airtel": "Moderate"
+    },
+    "geo": {
+      "lat": 27.0308,
+      "lng": 88.3756
+    }
+  },
+  {
+    "slug": "dawaipani",
+    "title": "Dawaipani",
+    "district": "darjeeling",
+    "category": "Offbeat Ridge Settlement",
+    "altitudeFeet": 6500,
+    "bestSeason": "October to April",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 76
+    },
+    "usp": "Quiet ridge facing Darjeeling town from across the valley with clear front-row views of Kanchenjunga.",
+    "about": "Dawaipani is a peaceful ridge settlement across the valley from Darjeeling, chosen for its front-facing Kanchenjunga views and uncrowded lanes. It is a homestay destination where sunrise, cloud shifts and the evening lights of Darjeeling are the programme.",
+    "foodAndShopping": {"eat": ["Pre-arranged home-style Nepali and Bengali meals", "Tea, momos and basic provisions from nearby larger settlements"], "buy": ["Tea and packaged hill snacks bought en route", "Seasonal farm produce if a host can arrange it"], "note": "There is little formal retail in Dawaipani. Carry medicines, cash and personal essentials, and ask your host about meals before arrival."},
+    "faqs": [{"question": "Is Dawaipani a good base for remote work?", "answer": "Treat connectivity as variable rather than guaranteed. Check the current signal at your exact homestay and keep an offline backup for important work."}, {"question": "What should I plan around the weather?", "answer": "Views are weather-dependent. Clear post-monsoon to spring mornings are often rewarding, while monsoon can bring fog, rain and road disruption."}],
+    "idealDays": "2 Days",
+    "network": {
+      "jio": "Moderate",
+      "airtel": "Weak"
+    },
+    "geo": {
+      "lat": 27.0272,
+      "lng": 88.3075
+    }
+  },
+  {
+    "slug": "chota-mangwa",
+    "title": "Chota Mangwa",
+    "district": "darjeeling",
+    "category": "Orchard & Tea Hamlet",
+    "altitudeFeet": 4500,
+    "bestSeason": "October to February",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 68
+    },
+    "usp": "Ridge settlement overlooking the Teesta-Rangeet river valley, dotted with orange groves and organic farms.",
+    "about": "Chota Mangwa is a Teesta–Rangeet valley viewpoint wrapped in orange groves, kitchen gardens and tea-country scenery. The village is better for slow mornings and orchard-season colour than for a long checklist of formal attractions.",
+    "foodAndShopping": {"eat": ["Home-cooked meals featuring seasonal garden vegetables", "Fresh oranges and local citrus preparations during harvest"], "buy": ["In-season oranges, pickles or squash directly from local producers", "Tea and basic snacks from the approach-road markets"], "note": "Harvest goods depend on the season and household supply. Buy directly from residents with permission, and carry essentials because stores are limited."},
+    "faqs": [{"question": "Is Chota Mangwa only worth visiting during orange season?", "answer": "No. The valley views and village atmosphere work year-round, though late autumn and winter add the orchard experience."}, {"question": "Are there many cafes or shops?", "answer": "No. Most visitors eat at their homestay; use larger towns or roadside markets for a wider choice of food, cash and supplies."}],
+    "idealDays": "1-2 Days",
+    "network": {
+      "jio": "Good",
+      "airtel": "Moderate"
+    },
+    "geo": {
+      "lat": 27.0706,
+      "lng": 88.3989
+    }
+  },
+  {
+    "slug": "sittong",
+    "title": "Sittong",
+    "district": "darjeeling",
+    "category": "Valley Orchard Village",
+    "altitudeFeet": 4000,
+    "bestSeason": "October to January",
+    "nearestHub": {
+      "name": "NJP Railway Station",
+      "distanceKm": 55
+    },
+    "usp": "The 'Orange Village' along the Riyang basin, featuring bamboo bridges, Lepcha settlements, and winter blooms.",
+    "about": "Sittong is a cluster of villages in the Riyang valley, widely known for winter oranges, Lepcha heritage and a gentler, lower-elevation hill landscape. It is a rewarding place to slow down, visit respectfully and use a local stay as your anchor.",
+    "foodAndShopping": {"eat": ["Fresh Sittong oranges and citrus drinks in season", "Homestay Nepali, Lepcha and Bengali home cooking"], "buy": ["Oranges, squash, marmalade and pickles during the winter crop", "Local honey or seasonal farm produce when available"], "note": "Sittong is a dispersed rural area, not one market street. Confirm where to collect supplies with your host and avoid treating private orchards as open for picking."},
+    "faqs": [{"question": "When is Sittong's orange season?", "answer": "The main visitor season for oranges is generally late autumn through winter, but harvest dates vary by weather and orchard."}, {"question": "Can I visit Lepcha villages respectfully?", "answer": "Yes—ask before photographing people, homes or religious sites, use a local host or guide where possible, and keep noise and litter to a minimum."}],
+    "idealDays": "2-3 Days",
+    "network": {
+      "jio": "Good",
+      "airtel": "Moderate"
+    },
+    "geo": {
+      "lat": 26.9366,
+      "lng": 88.3585
+    }
+  },
+  {
+    "slug": "srikhola",
+    "title": "Srikhola",
+    "district": "darjeeling",
+    "category": "Singalila Trek Village",
+    "altitudeFeet": 6900,
+    "bestSeason": "October to May",
+    "nearestHub": { "name": "NJP Railway Station", "distanceKm": 125 },
+    "usp": "A forest-and-river halt on the descending Sandakphu–Phalut trekking route, with trails onward to Rimbik.",
+    "about": "Srikhola is a small mountain village in the Singalila landscape, ringed by magnolia, oak, birch, pine and rhododendron forest. It is most useful as a restorative trekking stop: the stream, wooded slopes and route down toward Rimbik reward an overnight rather than a rushed visit.",
+    "foodAndShopping": { "eat": ["Simple trekkers' meals, tea and hot snacks at lodges or homestays", "Packed food arranged before setting out on longer trail days"], "buy": ["Basic trail snacks and refill supplies in small quantities", "Any specialist trekking gear from Darjeeling or Manebhanjan before the trek"], "note": "Srikhola is a trail village with limited stock. Carry cash, personal medication and waterproof layers, and pre-arrange meals and rooms in peak trek season." },
+    "faqs": [{ "question": "Is Srikhola a good non-trek destination?", "answer": "It can be a quiet forest stay, but its facilities and transport are oriented around the Sandakphu–Phalut trekking circuit. It suits travellers comfortable with simple arrangements." }, { "question": "Can I plan the Sandakphu route independently from here?", "answer": "Route conditions, permits and accommodation rules can change. Confirm the current requirements and a safe itinerary with an authorised local operator or forest office before leaving." }],
+    "idealDays": "1-2 Days",
+    "network": { "jio": "Weak", "airtel": "Weak" },
+    "geo": { "lat": 27.107, "lng": 88.126 }
+  },
+  {
+    "slug": "jorepokhri",
+    "title": "Jorepokhri",
+    "district": "darjeeling",
+    "category": "Salamander Lake Reserve",
+    "altitudeFeet": 7400,
+    "bestSeason": "October to April",
+    "nearestHub": { "name": "NJP Railway Station", "distanceKm": 85 },
+    "usp": "Twin lakes and a high-altitude reserve known for Himalayan salamanders on the Mirik–Sukhiapokhri circuit.",
+    "about": "Jorepokhri is a high, mist-prone stop centred on two small lakes and a wildlife reserve. It is best approached gently—as a short nature visit with mountain views when skies clear—rather than as a lake resort or a place to disturb its sensitive amphibian habitat.",
+    "foodAndShopping": { "eat": ["Tea and simple snacks at local stalls when open", "Meals and fuller provisions in Sukhiapokhri or Mirik"], "buy": ["Tea, snacks and basic supplies from nearby market towns", "No wildlife, plant or animal-related souvenirs"], "note": "Facilities around the reserve are modest. Carry water and warm layers, keep the lakeside quiet, and do not touch or try to photograph wildlife at close range." },
+    "faqs": [{ "question": "Will I see salamanders at Jorepokhri?", "answer": "There is no guarantee; sightings depend on season, weather and habitat conditions. Observe from a distance and follow reserve rules rather than searching off-trail." }, { "question": "Can I combine Jorepokhri with Mirik?", "answer": "Yes, it is commonly included on the Mirik–Pashupati–Sukhiapokhri circuit. Allow extra time for fog, narrow roads and photo stops." }],
+    "idealDays": "Day Trip or 1 Night",
+    "network": { "jio": "Moderate", "airtel": "Moderate" },
+    "geo": { "lat": 26.993, "lng": 88.172 }
+  },
+  {
+    "slug": "mirik",
+    "title": "Mirik",
+    "district": "darjeeling",
+    "category": "Lake & Tea Hill Town",
+    "altitudeFeet": 5797,
+    "bestSeason": "September to May",
+    "nearestHub": { "name": "NJP Railway Station", "distanceKm": 60 },
+    "usp": "A friendly hill town built around Sumendu Lake, tea gardens, orchards and a walkable 3.5 km lakeside road.",
+    "about": "Mirik is a more fully serviced Darjeeling-hills base, with Sumendu Lake and its Indreni bridge at the centre. Pair a lakeside walk with tea gardens, viewpoints and orchards, then use the town’s shops and transport links to explore Jorepokhri, Pashupati-side routes or Lepchajagat.",
+    "foodAndShopping": { "eat": ["Momos, thukpa, chowmein and Nepali meals in the town", "Tea, bakery items and seasonal oranges from local vendors"], "buy": ["Darjeeling tea, oranges and locally made preserves in season", "Useful groceries, medicines and everyday travel essentials"], "note": "Mirik has considerably more choice than the nearby villages, but shop responsibly at the border area and carry valid documentation if your plan involves any permitted border crossing." },
+    "faqs": [{ "question": "What is the best way to experience Sumendu Lake?", "answer": "Walk the lakeside circuit at an unhurried pace and check locally for current boating availability. Keep the lake clean and avoid feeding birds or animals." }, { "question": "Is Mirik suitable as a family base?", "answer": "Yes. It has easier access to food, shops and accommodation than the remote hamlets, while still giving access to nature stops and short excursions." }],
+    "idealDays": "2 Days",
+    "network": { "jio": "Good", "airtel": "Good" },
+    "geo": { "lat": 26.888, "lng": 88.189 }
+  },
+  {
+    "slug": "kurseong",
+    "title": "Kurseong",
+    "district": "darjeeling",
+    "category": "Tea & Heritage Hill Town",
+    "altitudeFeet": 4751,
+    "bestSeason": "September to May",
+    "nearestHub": { "name": "NJP Railway Station", "distanceKm": 51 },
+    "usp": "The 'Land of White Orchids' brings together tea gardens, colonial-era schools, viewpoints and the Darjeeling Himalayan Railway.",
+    "about": "Kurseong spreads across several green hills below Darjeeling, with tea estates, heritage schools and a lived-in town centre. It is a practical, lower-altitude base for travellers who want easy services alongside forest walks, Dow Hill atmosphere and the toy-train heritage of the DHR.",
+    "foodAndShopping": { "eat": ["Momos, thukpa, bakery snacks and Nepali meals in town", "Tea tastings and café meals around the market and tea-garden belt"], "buy": ["Darjeeling tea from established outlets", "Local bakery goods, groceries, medicines and practical gear"], "note": "Kurseong has the widest day-to-day services of these additions. For tea, prefer sealed or traceable products; for DHR rides, verify the current timetable directly before travel." },
+    "faqs": [{ "question": "Is Kurseong quieter than Darjeeling?", "answer": "Usually, yes—while it remains a functioning town with traffic and school activity. Stay near tea gardens or Dow Hill for a more peaceful feel." }, { "question": "Can I take a toy train from Kurseong?", "answer": "DHR services and traction vary by route and season. Check the official railway booking and timetable channels before planning around a specific train." }],
+    "idealDays": "2 Days",
+    "network": { "jio": "Good", "airtel": "Good" },
+    "geo": { "lat": 26.882, "lng": 88.278 }
+  }
+]

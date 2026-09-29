@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PlacesDirectory from '../../components/places/PlacesDirectory.tsx';
+import darjeelingData from '../../data/darjeeling.json';
+import type { Place } from '../../types/place';
+
+const darjeeling = darjeelingData as Place[];
+
+const placeCount = darjeeling.length;
+const pageTitle = `Offbeat Places in Darjeeling — ${placeCount} Quiet Hamlets & Ridge Settlements`;
+const pageDescription = `Escape Darjeeling town. Explore ${placeCount} offbeat stays including Sittong, Chatakpur, Lepchajagat, Srikhola and Mirik with altitude and transit details.`;
+---
+
+<BaseLayout>
+  <head slot="head">
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <link rel="canonical" href="https://offbeat-bengal.pages.dev/places/darjeeling" />
+  </head>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <PlacesDirectory
+      client:load
+      initialPlaces={darjeeling}
+      eyebrow={`Sub-division Register · ${String(placeCount).padStart(2, '0')} Hamlets`}
+      title="Offbeat Hamlets in Darjeeling"
+      description="Pine forests, organic eco-villages, and quiet ridge homestays facing Mt. Kanchenjunga away from commercialized town routes."
+    />
+  </div>
+</BaseLayout>

@@ -1,0 +1,171 @@
+---
+import type { Place } from '../../types/place';
+
+interface Props {
+  place: Place;
+}
+
+const { place } = Astro.props;
+const siteUrl = 'https://offbeat-bengal.pages.dev';
+const canonicalUrl = `${siteUrl}/${place.district}/${place.slug}`;
+const mapUrl = `https://www.google.com/maps/search/?api=1&query=${place.geo.lat},${place.geo.lng}`;
+const pageTitle = `${place.title}, ${place.district.charAt(0).toUpperCase() + place.district.slice(1)} - Offbeat Travel Guide`;
+const pageDescription = `${place.title} (${place.altitudeFeet} ft): ${place.about} Best season, route from ${place.nearestHub.name}, and mobile connectivity details.`;
+
+const placeId = `${canonicalUrl}#place`;
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+      "url": canonicalUrl,
+      "name": pageTitle,
+      "description": pageDescription,
+      "inLanguage": "en-IN",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        "name": "Offbeat Bengal",
+        "url": siteUrl
+      },
+      "mainEntity": { "@id": placeId },
+      "breadcrumb": { "@id": `${canonicalUrl}#breadcrumb` }
+    },
+    {
+      "@type": "TouristAttraction",
+      "@id": placeId,
+      "url": canonicalUrl,
+      "name": place.title,
+      "description": place.about,
+      "disambiguatingDescription": place.usp,
+      "touristType": place.category,
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": place.geo.lat,
+        "longitude": place.geo.lng
+      },
+      "elevation": {
+        "@type": "QuantitativeValue",
+        "value": place.altitudeFeet,
+        "unitCode": "FOT",
+        "unitText": "feet"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": `${place.district.charAt(0).toUpperCase() + place.district.slice(1)}, West Bengal`,
+        "addressCountry": "IN"
+      },
+      "containedInPlace": {
+        "@type": "AdministrativeArea",
+        "name": `${place.district.charAt(0).toUpperCase() + place.district.slice(1)}, West Bengal, India`
+      },
+      "hasMap": mapUrl,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Best season",
+          "value": place.bestSeason
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Recommended stay",
+          "value": place.idealDays
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Nearest transit hub",
+          "value": place.nearestHub.name
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Road distance from nearest transit hub",
+          "value": place.nearestHub.distanceKm,
+          "unitCode": "KMT",
+          "unitText": "kilometres"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Jio mobile coverage",
+          "value": place.network.jio
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Airtel mobile coverage",
+          "value": place.network.airtel
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "What to eat",
+          "value": place.foodAndShopping.eat.join("; ")
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "What to buy",
+          "value": place.foodAndShopping.buy.join("; ")
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Local food and shopping note",
+          "value": place.foodAndShopping.note
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${canonicalUrl}#faq`,
+      "mainEntity": place.faqs.map((faq) => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${canonicalUrl}#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Offbeat Bengal",
+          "item": siteUrl
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": `${place.district.charAt(0).toUpperCase() + place.district.slice(1)} places`,
+          "item": `${siteUrl}/places/${place.district}`
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": place.title,
+          "item": canonicalUrl
+        }
+      ]
+    }
+  ]
+};
+---
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{pageTitle}</title>
+  <meta name="description" content={pageDescription} />
+  <link rel="canonical" href={canonicalUrl} />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={pageTitle} />
+  <meta property="og:description" content={pageDescription} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:site_name" content="Offbeat Bengal" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+</head>

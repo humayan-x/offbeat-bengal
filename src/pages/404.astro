@@ -1,0 +1,67 @@
+---
+import { IconArrowLeft, IconArrowRight, IconMapPin, IconMountain } from '@tabler/icons-astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SearchModal from '../components/search/SearchModal.tsx';
+import darjeelingData from '../data/darjeeling.json';
+import kalimpongData from '../data/kalimpong.json';
+import type { Place } from '../types/place';
+
+const allPlaces: Place[] = [
+  ...(darjeelingData as Place[]),
+  ...(kalimpongData as Place[]),
+];
+---
+
+<BaseLayout title="Page not found — Offbeat Bengal">
+  <head slot="head">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Page not found — Offbeat Bengal</title>
+    <meta name="description" content="The requested page is not in the Offbeat Bengal field register. Search the destination index or return to the guide." />
+    <meta name="robots" content="noindex" />
+  </head>
+
+  <section class="relative overflow-hidden border-b border-[#e5e0d8] bg-linear-to-b from-[#f3f0ea] to-[#f9f8f5] py-14 sm:py-20 lg:py-24">
+    <div aria-hidden="true" class="absolute -right-16 -top-14 text-[#e5e0d8]/60">
+      <IconMountain class="size-72 sm:size-96" stroke-width="0.8" />
+    </div>
+
+    <div class="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
+      <p class="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-[#b45309]">
+        Field note · 404
+      </p>
+      <h1 class="mt-3 font-serif text-4xl font-medium leading-tight tracking-tight text-[#1c2421] sm:text-5xl md:text-6xl">
+        This trail has<br />
+        <span class="italic font-normal text-[#b45309]">gone quiet.</span>
+      </h1>
+      <p class="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-[#5f6c65] sm:text-base">
+        We couldn't find that page in the register. Try searching for a hamlet, district, or landmark, or head back to the field guide.
+      </p>
+
+      <div class="mx-auto mt-7 max-w-2xl text-left">
+        <SearchModal client:load places={allPlaces} />
+      </div>
+
+      <div class="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href="/"
+          class="inline-flex min-h-11 items-center justify-center gap-2 rounded border border-[#1c2421] bg-[#1c2421] px-5 py-2.5 text-xs font-semibold text-white shadow-xs transition hover:border-[#2d4739] hover:bg-[#2d4739]"
+        >
+          <IconArrowLeft class="size-3.5" />
+          Return to the Field Guide
+        </a>
+        <a
+          href="/places"
+          class="inline-flex min-h-11 items-center justify-center gap-2 rounded border border-[#d6d0c4] bg-white px-5 py-2.5 text-xs font-semibold text-[#1c2421] transition hover:border-[#b45309] hover:text-[#b45309]"
+        >
+          Browse the Full Index
+          <IconArrowRight class="size-3.5" />
+        </a>
+      </div>
+
+      <div class="mt-10 flex items-center justify-center gap-2 font-mono text-[10px] uppercase tracking-wider text-[#7d8a83]">
+        <IconMapPin class="size-3 text-[#b45309]" />
+        <span>{allPlaces.length} mapped places across Darjeeling &amp; Kalimpong</span>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
